@@ -1,0 +1,50 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: $font_normal;
+    color: $GrayishBlue;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.con{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.helper_container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.flex{
+    display: flex;
+    &_jc_sb{
+        justify-content: space-between;
+    }
+    &_ai_c{
+        align-items: center;
+    }
+}

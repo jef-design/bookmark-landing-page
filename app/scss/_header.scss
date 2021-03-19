@@ -1,0 +1,28 @@
+.nav{
+    ul{
+        li{
+            a{
+                text-transform: uppercase;
+                color: $VeryDarkBlue;
+                font-size: $font_small;
+                &:hover{
+                    color: $SoftRed;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 50px;
+            }
+        }
+    }
+}
+.btn_cta{
+    background-color: $SoftRed;
+    border: 2px solid $SoftRed;
+    color: #fff;
+    &:hover{
+        background-color: transparent;
+        color: $SoftRed;
+        border: 2px solid $SoftRed;
+    
+    }
+}

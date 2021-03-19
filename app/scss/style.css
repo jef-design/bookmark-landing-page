@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html {
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+  color: #9194a1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.con {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.helper_container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex_jc_sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex_ai_c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ul li a {
+  text-transform: uppercase;
+  color: #252b46;
+  font-size: 0.8rem;
+}
+
+.nav ul li a:hover {
+  color: #fa5757;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.btn_cta {
+  background-color: #fa5757;
+  border: 2px solid #fa5757;
+  color: #fff;
+}
+
+.btn_cta:hover {
+  background-color: transparent;
+  color: #fa5757;
+  border: 2px solid #fa5757;
+}
+
+.hero_section {
+  margin-top: 50px;
+}
+
+.hero_section .hero_text {
+  padding-right: 200px;
+}
+
+.hero_section .hero_text h1 {
+  font-size: 3.5rem;
+  color: #252b46;
+}
+
+.hero_section .hero_text p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.hero_section .hero_text .btn_google {
+  color: white;
+  background-color: #5368df;
+  border: 2px solid #5368df;
+  border: none;
+  margin-right: 20px;
+}
+
+.hero_section .hero_text .btn_google:hover {
+  border: 2px solid #5368df;
+  color: #5368df;
+  background-color: transparent;
+}
+
+.hero_section .hero_text .btn_firefox {
+  border: none;
+}
+
+.hero_section .hero_text .btn_firefox:hover {
+  border: 2px solid #252b46;
+}
+/*# sourceMappingURL=style.css.map */
