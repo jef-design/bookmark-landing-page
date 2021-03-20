@@ -19,10 +19,85 @@
     background-color: $SoftRed;
     border: 2px solid $SoftRed;
     color: #fff;
+    text-transform: uppercase;
     &:hover{
         background-color: transparent;
         color: $SoftRed;
         border: 2px solid $SoftRed;
     
+    }
+}
+.burger{
+    width: 35px;
+    height: 35px;
+    display: none;
+    .line1, .line2, .line3{
+        width: 35px;
+        height: 5px;
+        background-color: $VeryDarkBlue;
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:677px){
+    .nav_menu{
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $VeryDarkBlue;
+        opacity: 0.9;
+        color: #fff;
+        
+    }
+    .show_nav{
+    top: 0;
+}
+    .burger{
+        display: block;
+        z-index: 2;
+    }
+    
+    .nav{
+        ul{
+            li{
+                border-top: 1px solid #dddd;
+                width: 100%;
+                margin-bottom: 20px;
+                padding-top: 10px;
+               
+                a{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    &:hover{
+                        color: $SoftRed;
+                    }
+                }
+                &:not(:last-child){
+                    margin-right: 0px;
+                }
+                
+            }
+        }
+    }
+    .btn_cta{
+        background-color: transparent;
+        border: 2px solid white;
+        color: #fff;
+        width: 100%;
+        font-size: 1.5rem;
+        
+        &:hover{
+            background-color: transparent;
+            color: $SoftRed;
+            border: 2px solid $SoftRed;
+        
+        }
     }
 }
