@@ -1,29 +1,29 @@
 .hero_section{
     margin-top: 50px;
     .hero_text{
-        padding-right: 200px;
+        padding-right: 100px;
         h1{
             font-size: 3.5rem;
             color: $VeryDarkBlue;
         }
         p{
-            margin-bottom: 30px;
             margin-top: 30px;
         }
         .btn_google{
             color: white;
             background-color: $SoftBlue;
-            border:2px solid $SoftBlue;
             border: none;
+            border:2px solid $SoftBlue;
             margin-right: 20px;
+            margin-top: 30px;
             &:hover{
-                border:2px solid $SoftBlue; 
                 color: $SoftBlue;
                 background-color: transparent;
             }
         }
         .btn_firefox{
             border: none;
+            border:2px solid white;
             &:hover{
                 border:2px solid $VeryDarkBlue; 
             }
