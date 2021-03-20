@@ -77,6 +77,10 @@ a {
   margin-right: 50px;
 }
 
+.nav_menu {
+  position: relative;
+}
+
 .btn_cta {
   background-color: #fa5757;
   border: 2px solid #fa5757;
@@ -106,6 +110,20 @@ a {
   margin-bottom: 5px;
 }
 
+.burger_close {
+  width: 35px;
+  height: 35px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.burger_close img {
+  width: 35px;
+  height: 35px;
+}
+
 @media screen and (max-width: 677px) {
   body {
     overflow-x: hidden;
@@ -127,15 +145,18 @@ a {
     background-color: #252b46;
     opacity: 0.9;
     color: #fff;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
   }
   .show_nav {
     top: 0;
   }
   .burger {
     display: block;
-    z-index: 2;
+  }
+  .burger_close {
+    display: block;
+  }
+  .active {
+    color: #fa5757;
   }
   .nav ul li {
     border-top: 1px solid #dddd;
