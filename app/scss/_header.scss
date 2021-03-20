@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width:677px){
+    body{
+        overflow-x: hidden;
+    }
+
     .nav_menu{
         position: absolute;
         top: -100%;
@@ -54,6 +58,7 @@
         background-color: $VeryDarkBlue;
         opacity: 0.9;
         color: #fff;
+        transition: 0.5s ease;
         
     }
     .show_nav{
