@@ -72,7 +72,6 @@
         justify-content: center;
         flex-direction: column;
         background-color: $VeryDarkBlue;
-        opacity: 0.9;
         color: #fff;
        
         
@@ -126,6 +125,13 @@
             color: $SoftRed;
             border: 2px solid $SoftRed;
         
+        }
+    }
+}
+@media screen and (min-width: 551px){
+    .hero_text{
+        h1{
+            font-size: 2.5rem;
         }
     }
 }

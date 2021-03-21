@@ -1,5 +1,5 @@
 .hero_section{
-    margin-top: 50px;
+    height: 100vh;
     .hero_text{
         padding-right: 100px;
         h1{
@@ -48,3 +48,13 @@
         }
      }
  }
+
+ @media screen and (max-width: 551px){
+    .hero_section{
+        .hero_text{
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+}

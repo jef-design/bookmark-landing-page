@@ -26,11 +26,18 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #252b46;
+  padding-bottom: 10px;
+}
+
 .btn {
   padding: 10px 25px;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  border: none;
 }
 
 .con {
@@ -143,7 +150,6 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #252b46;
-    opacity: 0.9;
     color: #fff;
   }
   .show_nav {
@@ -188,8 +194,14 @@ a {
   }
 }
 
+@media screen and (min-width: 551px) {
+  .hero_text h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .hero_section {
-  margin-top: 50px;
+  height: 100vh;
 }
 
 .hero_section .hero_text {
@@ -247,5 +259,86 @@ a {
     width: 100%;
     height: 100%;
   }
+}
+
+@media screen and (max-width: 551px) {
+  .hero_section .hero_text h1 {
+    font-size: 2rem;
+  }
+}
+
+.features_section {
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features_section .features_text {
+  text-align: center;
+  max-width: 500px;
+}
+
+.features_section .tabs_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features_section .tabs_container .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features_section .tabs_container .tabs li {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #dddd;
+}
+
+.features_section .tabs_container .tabs li:hover {
+  color: #fa5757;
+}
+
+.features_section .tabs_container .tabs .tab_active {
+  color: #fa5757;
+}
+
+.features_section .tabs_container .tabs .tab_active::after {
+  content: '';
+  display: block;
+  background-color: #fa5757;
+  width: 100%;
+  height: 4px;
+  margin-top: 30px;
+}
+
+.features_section .tabs_container .tabs_contents {
+  margin-top: 50px;
+}
+
+.features_section .tabs_container .tabs_contents .tab_desc:not(:first-child) {
+  display: none;
+}
+
+.features_section .tabs_container .tabs_contents .tab_desc .features_desc {
+  margin-left: 80px;
+}
+
+.features_section .tabs_container .tabs_contents .tab_desc .features_desc button {
+  background-color: #5368df;
+  color: white;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
