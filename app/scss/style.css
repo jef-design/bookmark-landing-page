@@ -396,7 +396,6 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 400px;
 }
 
 .extension_section .extension_text {
@@ -413,8 +412,8 @@ h4 {
 
 .extension_section .extension_container .col {
   padding: 40px;
-  -webkit-box-shadow: 5px 5px 20px;
-          box-shadow: 5px 5px 20px;
+  -webkit-box-shadow: 2px 2px 10px;
+          box-shadow: 2px 2px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +447,8 @@ h4 {
   outline: none;
   cursor: pointer;
   border: 2px solid #5368df;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 .extension_section .extension_container .col .extension_btn button:hover {
@@ -481,5 +482,83 @@ h4 {
   .extension_container .col {
     width: 100%;
   }
+}
+
+.faq_section {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.faq_section .accordion_container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.faq_section .accordion_container .accordion .accordion_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #9194a1;
+  border-bottom: 1px solid #9194a1;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.faq_section .accordion_container .accordion .accordion_header i {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.faq_section .accordion_container .accordion .accordion_header p {
+  color: #252b46;
+}
+
+.faq_section .accordion_container .accordion .accordion_header p:hover {
+  color: #fa5757;
+}
+
+.faq_section .accordion_container .accordion .accordion_header i {
+  font-size: 2rem;
+  color: #5368df;
+}
+
+.faq_section .accordion_container .accordion .accordion_content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  text-align: left;
+  line-height: 2em;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.faq_section .accordion_container .accordion .accordion_content.acc_active {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.accordion_header.acc_active i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion_header.acc_active i i {
+  color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */

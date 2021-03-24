@@ -55,6 +55,18 @@ function openPage(pageName) {
   }
   
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  // document.getElementById("defaultOpen").click();
 
- 
+ //accordion
+
+ const accordionBtn = document.querySelectorAll('.accordion_header');
+ const accordionBody = document.querySelectorAll('.accordion_content');
+
+ accordionBtn.forEach((btn) => {
+   btn.addEventListener('click', ()=>{
+
+    const panel = btn.nextElementSibling;
+    panel.classList.toggle('acc_active')
+     btn.classList.toggle('acc_active');
+   });
+ });
