@@ -18,12 +18,25 @@
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            input{
-                border-radius: 5px;
-                border: none;
-                outline: none;
-                margin-right: 20px;
-                padding: 10px;
+            .text_email{
+                position: relative;
+                input{
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    margin-right: 20px;
+                    padding: 10px;
+                }
+                .error{
+                    display: none;
+                    position: absolute;
+                    font-size: .5rem;
+                    letter-spacing: 0;
+                    color: #fff;
+                    background-color: $SoftRed;
+                   width: 100%;
+                   font-style: italic;
+                }
             }
         }
     }

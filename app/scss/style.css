@@ -619,12 +619,27 @@ h4 {
           justify-content: center;
 }
 
-.footer .footer_text .footer_email input {
+.footer .footer_text .footer_email .text_email {
+  position: relative;
+}
+
+.footer .footer_text .footer_email .text_email input {
   border-radius: 5px;
   border: none;
   outline: none;
   margin-right: 20px;
   padding: 10px;
+}
+
+.footer .footer_text .footer_email .text_email .error {
+  display: none;
+  position: absolute;
+  font-size: .5rem;
+  letter-spacing: 0;
+  color: #fff;
+  background-color: #fa5757;
+  width: 100%;
+  font-style: italic;
 }
 
 .footer_bot {

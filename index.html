@@ -211,8 +211,11 @@
       <p>35,000+ ALREADY JOINED</p>
       <h2>Stay up-to-date with what we’re doing</h2>
       <div class="footer_email flex">
-        <input type="text">
-          <button class="btn">contact</button>
+        <div class="text_email">
+          <input type="text" id="txtemail" class="txtemail">
+         <p class="error" id="error">Whoops make sure it's an email</p>
+        </div>
+          <button class="btn" onclick="checkEmail()">Contact Us</button>
       </div>
       
     </div>

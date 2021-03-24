@@ -70,3 +70,17 @@ function openPage(pageName) {
      btn.classList.toggle('acc_active');
    });
  });
+
+ function checkEmail() {
+
+  var email = document.getElementById('txtemail');
+  var errorMessage = document.getElementById('error');
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+  if (!filter.test(email.value)) {
+  errorMessage.style.display = "block";
+  email.style.borderColor = "red";
+  email.focus;
+  return false;
+}
+ }
