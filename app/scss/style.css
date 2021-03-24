@@ -32,6 +32,10 @@ h2 {
   padding-bottom: 10px;
 }
 
+h4 {
+  color: #252b46;
+}
+
 .btn {
   padding: 10px 25px;
   border-radius: 5px;
@@ -286,6 +290,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: auto;
 }
 
 .features_section .features_text {
@@ -365,6 +370,7 @@ h2 {
   }
   .features_section .tabs_container .tabs_contents .tab_desc img {
     width: 100%;
+    height: 100%;
   }
   .features_section .tabs_container .tabs_contents .tab_desc .features_desc {
     margin-left: 0;
@@ -379,6 +385,101 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+}
+
+.extension_section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 400px;
+}
+
+.extension_section .extension_text {
+  text-align: center;
+  padding: 50px;
+  max-width: 500px;
+}
+
+.extension_section .extension_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.extension_section .extension_container .col {
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  height: 350px;
+}
+
+.extension_section .extension_container .col:not(:last-child) {
+  margin-right: 40px;
+}
+
+.extension_section .extension_container .col .extension_bg img {
+  margin-bottom: 20px;
+}
+
+.extension_section .extension_container .col .extension_btn button {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #5368df;
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #5368df;
+}
+
+.extension_section .extension_container .col .extension_btn button:hover {
+  background-color: transparent;
+  color: #5368df;
+}
+
+.extension_section .extension_container .col .col_dotted {
+  max-width: 200px;
+}
+
+.extension_section .extension_container .col .col_dotted img {
+  width: 100%;
+}
+
+.col_firefox {
+  margin-top: 40px;
+}
+
+.col_opera {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 780px) {
+  .extension_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .extension_container .col {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
