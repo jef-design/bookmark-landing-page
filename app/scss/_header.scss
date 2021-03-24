@@ -44,6 +44,16 @@
         }
     }
 }
+.logo_mobile{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 35px;
+    height: 35px;
+    display: none;
+   
+}
 .burger_close{
     width: 35px;
     height: 35px;
@@ -85,6 +95,9 @@
       
     }
     .burger_close{
+        display: block;
+    }
+    .logo_mobile{
         display: block;
     }
     .active{
