@@ -26,6 +26,7 @@
                     outline: none;
                     margin-right: 20px;
                     padding: 10px;
+                    width: 100%;
                 }
                 .error{
                     display: none;
@@ -37,6 +38,9 @@
                    width: 100%;
                    font-style: italic;
                 }
+            }
+            button{
+                margin-left: 20px;
             }
         }
     }
@@ -93,7 +97,7 @@
                 }
                 button{
                     margin-top: 20px;
-                    
+                    margin-left: 0px;
                     background-color: $SoftRed;
                     color: #fff;
                 }

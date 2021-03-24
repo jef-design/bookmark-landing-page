@@ -629,6 +629,7 @@ h4 {
   outline: none;
   margin-right: 20px;
   padding: 10px;
+  width: 100%;
 }
 
 .footer .footer_text .footer_email .text_email .error {
@@ -640,6 +641,10 @@ h4 {
   background-color: #fa5757;
   width: 100%;
   font-style: italic;
+}
+
+.footer .footer_text .footer_email button {
+  margin-left: 20px;
 }
 
 .footer_bot {
@@ -699,6 +704,7 @@ h4 {
   }
   .footer .footer_text .footer_email button {
     margin-top: 20px;
+    margin-left: 0px;
     background-color: #fa5757;
     color: #fff;
   }
