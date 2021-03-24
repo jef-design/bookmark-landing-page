@@ -1,0 +1,98 @@
+.footer{
+    padding: 50px;
+    justify-content: center;
+    background-color: $SoftBlue;
+    .footer_text{
+        max-width: 500px;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        p{
+            letter-spacing: 5px;
+        }
+        h2{
+            margin-top: 20px;
+            color: #fff;
+        }
+        input{
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+    }
+   
+}
+.footer_bot{
+    background-color: $VeryDarkBlue;
+    .footer_bottom{
+        padding: 20px;
+        background-color: $VeryDarkBlue;
+        ul{
+            svg{
+                margin-right: 25px;
+            }
+            li{
+                text-transform: uppercase;
+                &:not(:last-child){
+                    
+                    margin-right: 25px;
+                }
+                a{
+                    color: #fff;
+                    font-size: 1rem;
+                    &:hover{
+                        color: $SoftRed;
+                    }
+                }
+            }
+        }
+        .footer_social{
+            i{
+                cursor: pointer;
+                font-size: 2rem;
+                &:not(:first-child){
+                    margin-left: 25px;
+                }
+                &:hover{
+                    color: $SoftRed;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 596px){
+    .footer{
+        .footer_email{
+            flex-direction: column;
+            width: 100%;
+            input{
+                margin-bottom: 20px;
+                
+            }
+            button{
+                background-color: $SoftRed;
+                color: #fff;
+            }
+        }
+    }
+    .footer_bot{
+        .footer_link{
+            flex-direction: column;
+            svg{
+                margin-bottom: 20px;
+                
+            }
+            li{
+                margin-bottom: 20px;
+                &:not(:last-child){
+                    margin-right: 0px;
+                }     
+            }
+        }
+        .footer_bottom{
+            flex-direction: column;
+        }
+    }
+}

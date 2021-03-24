@@ -64,6 +64,14 @@
 .col_opera{
     margin-top: 80px;
 }
+@media screen and (max-width: 551px){
+    .extension_section{
+        .extension_text{
+            padding: 25px;
+            width: 100%;
+        }
+    }
+}
 @media screen and (max-width: 780px){
     .extension_container{
         flex-direction: column;

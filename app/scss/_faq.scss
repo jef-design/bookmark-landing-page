@@ -52,6 +52,14 @@
             }
             
         }
+        .faq_moreinfo{
+            margin-top: 20px;
+            button{
+                background-color: $SoftBlue;
+                        color: white;
+                        margin-top: 20px;
+            }
+        }
     }
 }
 .accordion_header.acc_active i{
