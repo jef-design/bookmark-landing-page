@@ -14,12 +14,17 @@
             margin-top: 20px;
             color: #fff;
         }
-        input{
+        .footer_email{
             margin-top: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
+            display: flex;
+            justify-content: center;
+            input{
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                margin-right: 20px;
+                padding: 10px;
+            }
         }
     }
    
@@ -64,35 +69,41 @@
 }
 @media screen and (max-width: 596px){
     .footer{
-        .footer_email{
-            flex-direction: column;
-            width: 100%;
-            input{
-                margin-bottom: 20px;
-                
-            }
-            button{
-                background-color: $SoftRed;
-                color: #fff;
+        .footer_text{
+            .footer_email{
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                input{
+                   margin-right: 0px;
+                    
+                }
+                button{
+                    margin-top: 20px;
+                    
+                    background-color: $SoftRed;
+                    color: #fff;
+                }
             }
         }
     }
     .footer_bot{
-        .footer_link{
-            flex-direction: column;
-            svg{
-                margin-bottom: 20px;
-                
-            }
-            li{
-                margin-bottom: 20px;
-                &:not(:last-child){
-                    margin-right: 0px;
-                }     
-            }
-        }
+        
         .footer_bottom{
             flex-direction: column;
+            .footer_link{
+                flex-direction: column;
+                svg{
+                    margin-bottom: 20px;
+                    
+                }
+                li{
+                    margin-bottom: 20px;
+                    &:not(:last-child){
+                        margin-right: 0px;
+                    }     
+                }
+            }
         }
     }
 }

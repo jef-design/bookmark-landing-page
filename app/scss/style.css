@@ -609,12 +609,22 @@ h4 {
   color: #fff;
 }
 
-.footer .footer_text input {
+.footer .footer_text .footer_email {
   margin-top: 20px;
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer_text .footer_email input {
   border-radius: 5px;
   border: none;
   outline: none;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .footer_bot {
@@ -661,40 +671,42 @@ h4 {
 }
 
 @media screen and (max-width: 596px) {
-  .footer .footer_email {
+  .footer .footer_text .footer_email {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    margin: 0;
   }
-  .footer .footer_email input {
-    margin-bottom: 20px;
+  .footer .footer_text .footer_email input {
+    margin-right: 0px;
   }
-  .footer .footer_email button {
+  .footer .footer_text .footer_email button {
+    margin-top: 20px;
     background-color: #fa5757;
     color: #fff;
-  }
-  .footer_bot .footer_link {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer_bot .footer_link svg {
-    margin-bottom: 20px;
-  }
-  .footer_bot .footer_link li {
-    margin-bottom: 20px;
-  }
-  .footer_bot .footer_link li:not(:last-child) {
-    margin-right: 0px;
   }
   .footer_bot .footer_bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer_bot .footer_bottom .footer_link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_bot .footer_bottom .footer_link svg {
+    margin-bottom: 20px;
+  }
+  .footer_bot .footer_bottom .footer_link li {
+    margin-bottom: 20px;
+  }
+  .footer_bot .footer_bottom .footer_link li:not(:last-child) {
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
