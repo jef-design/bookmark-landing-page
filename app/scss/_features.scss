@@ -57,3 +57,48 @@
         }
     }
 }
+@media screen and (max-width:933px){
+    .features_section{
+        .features_text{
+           
+        }
+        .tabs_container{
+           
+           
+            .tabs{
+                
+                li{
+                    
+                   
+                   
+                }
+                .tab_active{
+                    
+                }
+            }
+            
+            .tabs_contents{
+                
+                .tab_desc{
+                    flex-direction: column;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                    }
+                   
+                    .features_desc{
+                        margin-left: 0;
+                        margin-top: 70px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 551px){
+    .tabs{
+        flex-direction: column;
+        text-align: center;
+    }
+}
