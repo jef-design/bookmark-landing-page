@@ -321,7 +321,8 @@ h4 {
 }
 
 .features_section .tabs_container .tabs li {
-  padding: 10px 20px;
+  position: relative;
+  padding: 10px 30px;
   border: none;
   cursor: pointer;
   border-bottom: 1px solid #dddd;
@@ -341,7 +342,9 @@ h4 {
   background-color: #fa5757;
   width: 100%;
   height: 4px;
-  margin-top: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .features_section .tabs_container .tabs_contents {
@@ -350,6 +353,11 @@ h4 {
 
 .features_section .tabs_container .tabs_contents .tab_desc:not(:first-child) {
   display: none;
+}
+
+.features_section .tabs_container .tabs_contents .tab_desc img {
+  max-height: 346px;
+  width: 100%;
 }
 
 .features_section .tabs_container .tabs_contents .tab_desc .features_desc {
@@ -640,7 +648,7 @@ h4 {
   font-size: .5rem;
   letter-spacing: 0;
   color: #fff;
-  background-color: #fa5757;
+  background-color: red;
   width: 100%;
   font-style: italic;
 }

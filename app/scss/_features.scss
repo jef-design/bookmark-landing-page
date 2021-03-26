@@ -15,7 +15,8 @@
             margin-top: 40px;
             justify-content: center;
             li{
-                padding: 10px 20px;
+                position: relative;
+                padding: 10px 30px;
                 border: none;
                 cursor: pointer;
                 border-bottom: 1px solid #dddd;
@@ -32,7 +33,10 @@
                     background-color: $SoftRed;
                     width: 100%;
                     height: 4px;
-                    margin-top: 30px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    
                 }
             }
         }
@@ -43,6 +47,11 @@
                 
                 &:not(:first-child){
                     display: none;
+                    
+                }
+                img{
+                    max-height: 346px;
+                    width: 100%;
                 }
                 .features_desc{
                     margin-left: 80px;
@@ -60,24 +69,9 @@
 }
 @media screen and (max-width:933px){
     .features_section{
-        .features_text{
-           
-        }
+        
         .tabs_container{
            
-           
-            .tabs{
-                
-                li{
-                    
-                   
-                   
-                }
-                .tab_active{
-                    
-                }
-            }
-            
             .tabs_contents{
                 
                 .tab_desc{
